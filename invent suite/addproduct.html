@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+       <link rel="stylesheet" type="text/css" href="style.css" />
+       
+        <title>Document</title>
+   
+       
+<body>
+<div class="container-flex" style="margin-right:50px;margin-left:50px; background-color: rgb(225, 225, 225);">
+<nav class="navbar navbar-light" style="background-color: white;">
+  <a class="navbar-brand" href="#">
+    <img src="logo2.png" alt="">
+  </a>
+  
+<div class="container-flex">
+    <input type='text' placeholder='Search...' id='input1' />
+
+    <div class="btn-group" style="margin:10px; padding-right:20px;">
+        <a class="btn btn-light dropdown-toggle" data-toggle="dropdown" href="#"><img style="height: 30px;"
+                src="g logo.png"><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a>nts</a>
+
+        </ul>
+    </div>
+    <i style="padding-right: 20px;" class="fa fa-bell" aria-hidden="true"></i>
+
+    <img src="user.png">
+
+</div>
+
+</nav>
+<div class="row">
+    <div style="margin-top:2px;margin-right:12px; height:1150px; background-color:white;" class="container-flex col-md-2 ">
+        <nav>
+            <ul class="list-unstyled components mb-5">
+                <li class="active">
+                    <div class="container-flex">   
+                       <button id="but" style=" background-image:url('home.png');" class="btn btn-lg ">Home</button> 
+                    </div>
+                </li>
+                <li class="active">
+                    <div class="container-flex">
+                        <button id="but"
+                            style="background-image:url('order1.png');"
+                            class="btn btn-lg ">Order</button>
+                    </div>
+                </li>
+            
+                <li class="active">
+                    <div class="container-flex">
+                        <button id="but"
+                            style=" background-image:url('product.png'); "
+                            class="btn btn-lg ">Products</button>
+                    </div>
+                </li>
+                <li class="active">
+                    <div class="container-flex">
+                        <button id="but"
+                            style="background-image:url('users.png');"
+                            class="btn btn-lg ">Customers</button>
+                    </div>
+                </li>
+                <li class="active">
+                    <div class="container-flex">
+                        <button id="but"
+                            style="background-image:url('warehouse.png');"
+                            class="btn btn-lg ">Warehouse</button>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+    <div class="col-md-6  mt-4">
+        <div class="card p-4">
+            <a href="#"><p>< products</p></a>
+            <h1>Add product</h1>
+            <div class="row mt-4 mb-4">
+                <div class="col-md-12">
+                    <label for="inputtext">Name</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea3">Description</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea3" rows="7"></textarea>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+    
+    <div class="col-md-12  mt-4">
+        <div class="card  p-4">
+          
+            <h1>Add product</h1>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        
+                       <div class="card">
+                           <div class="container-flex">
+                            <button style="border:none;background-color: white; width: 300px;"><img style="width: 300px;"
+                                    src="addmedia.png"></button>
+                            <button style="border:none;background-color: white; width: 200px;"><img style="width: 200px; height:200;"
+                                    src="addmedia.png"></button>
+                           </div>
+                       
+                       </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <div class="col-md-12 mt-4">
+        <div class="card p-4">
+           
+            <h1>Inventry</h1>
+            <div class="row mt-4 mb-4">
+                <div class="col-md-12">
+                    <label for="inputtext">SKU (Stock Keeping Unit)</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="inputtext">Barcode (ISBN, UPC,GTIN,etc.)</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+
+    </div>
+   
+    
+</div>
+<div class="col-md-3 mt-4">
+    <div class="card p-4">
+        <div class="row mt-4 mb-4">
+            <div class="col-md-12">
+                <h2>Quantity</h2>
+                <label for="inputtext">Available</label>
+                <input type="text" class="form-control">
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Qty
+                    </a>
+                
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row mt-4 mb-4">
+            <div class="col-md-12">
+                <h2>Pricing</h2>
+                <label for="inputtext">price</label>
+                <input type="text" class="form-control">
+                <label for="inputtext">cost per item</label>
+                <input type="text" class="form-control">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Charge tax on this product
+                    </label>
+                </div>
+            </div>
+            
+        </div>
+        <h2>product details</h2>
+        <label for="inputtext">product type</label>
+        <div class="btn-group ">
+            
+            <input style="width: 200px; border:1px solid rgb(220, 220, 220); background:white" class="form-control" type="text">
+        
+            
+            <button style="border:1px solid rgb(220, 220, 220);border-left:none;background:white" type="button"
+                class="btn btn-lg btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                ...
+            </div>
+        </div>
+        <label for="inputtext">vender</label>
+        <div class="btn-group ">
+        
+            <input style="width: 200px; border:1px solid rgb(220, 220, 220); background:white" class="form-control"
+                type="text">
+        
+            </button>
+            <button style="border:1px solid rgb(220, 220, 220);border-left:none;background:white" type="button"
+                class="btn btn-lg btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                ...
+            </div>
+        </div>
+        <label for="inputtext">Type Tags</label>
+        <div class="btn-group ">
+        
+            <input style="width: 200px; border:1px solid rgb(220, 220, 220); background:white" class="form-control"
+                type="text">
+        
+        
+            <button style="border:1px solid rgb(220, 220, 220);border-left:none;background:white" type="button"
+                class="btn btn-lg btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                ...
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+
+
+</div>
+
+<div style="background-color: white;"class="container-flex col-md-12 mt-4">
+    
+   <button style="float: right; margin-left:15px;" class="btn btn-primary">Add product</button>
+<button style="float: right;" class="btn btn-light">Cancel</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+#but {
+  padding-right: 10px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 200px;
+  text-align: left;
+}
+
+#input1 {
+  background-image: url("search.png");
+  background-position: right;
+  padding-left: 30px;
+  padding-right: 20px;
+  margin-right: 20px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  height: 40px;
+  border: 2px solid rgb(191, 190, 190);
+  border-radius: 5%;
+}
